@@ -1,0 +1,55 @@
+</style>
+</head>
+<body>
+<main class="app">
+<section class="card" aria-live="polite">
+<header>
+<h1>Quiz: Fundamentos da Web</h1>
+<p>Projeto 1 e 2 — jogo de <strong>perguntas e respostas</strong> (HTML, CSS e JavaScript).<br>
+Use <span class="kbd">1</span>/<span class="kbd">2</span>/<span class="kbd">3</span>/<span class="kbd">4</span> para marcar alternativas e <span class="kbd">Enter</span> para avançar.</p>
+</header>
+
+
+<div class="controls" style="margin:16px 0">
+<span id="counter" class="pill" aria-live="polite">Pergunta 1 de 10</span>
+<span class="spacer"></span>
+<button id="btnSkip" class="btn secondary" title="Pular esta questão (não pontua)">Pular</button>
+<button id="btnReset" class="btn ghost" title="Reiniciar o quiz">Reiniciar</button>
+</div>
+
+
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+
+
+<div id="screen-question">
+<h2 id="qText" class="question">Carregando…</h2>
+<div id="options" class="options" role="listbox" aria-label="Alternativas"></div>
+</div>
+
+
+<div id="screen-result" class="result" hidden>
+<p class="score" id="finalScore">0/0</p>
+<div class="grid">
+<div class="card">
+<div><strong>Acertos:</strong> <span id="hits">0</span></div>
+<div><strong>Erros:</strong> <span id="miss">0</span></div>
+<div><strong>Percentual:</strong> <span id="pct">0%</span></div>
+</div>
+<div class="card">
+<div><strong>Maior pontuação (este navegador):</strong> <span id="best">0%</span></div>
+<button id="btnAgain" class="btn" style="margin-top:10px">Jogar novamente</button>
+</div>
+</div>
+<details>
+<summary>Ver gabarito e explicações</summary>
+<ol id="review" style="margin:10px 0 0 18px"></ol>
+</details>
+</div>
+
+
+<footer>
+<small style="color:var(--muted)">Feito para aprender <strong>Arrays</strong> e <strong>Objetos</strong> em JavaScript.</small>
+<button id="btnNext" class="btn" aria-label="Próxima pergunta">Próxima ▸</button>
+</footer>
+</section>
+</main>
